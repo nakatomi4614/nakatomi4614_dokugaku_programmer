@@ -1,10 +1,12 @@
 #　一行目のコメントは入力省略しました
 
-#計算4種類
-A = 10
-#和
-print(A)
-#デクリメント
-A -= 1
-print(A)
+#文字列
+a = "Hello, World!"
+print(a)
+#float
+a = 2.2
+print(a)
+#bool
+a = True
+print(a)
 
