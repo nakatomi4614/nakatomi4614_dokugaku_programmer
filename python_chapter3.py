@@ -1,5 +1,6 @@
 #　一行目のコメントは入力省略しました
 
-for i in range(100):
-    print("Hello, World!")
+for (i = 0; i < 100; i++){
+     console.log("Hello, World!");
+}
 
