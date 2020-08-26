@@ -71,3 +71,11 @@ if x % 2== 0:
     print("偶数")
 else:
     print("奇数")
+
+# if は複合文
+print("これは単純文")
+
+
+
+
+print("五行開けて書いたprint文")
