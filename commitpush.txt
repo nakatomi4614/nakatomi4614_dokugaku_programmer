@@ -1,2 +1,2 @@
-comitte : ctrl+k 
+commit : ctrl+k
 push : ctrl+shitf+k
