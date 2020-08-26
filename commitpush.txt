@@ -1,0 +1,2 @@
+comitte : ctrl+k 
+push : ctrl+shitf+k
