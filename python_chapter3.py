@@ -1,6 +1,6 @@
 #　一行目のコメントは入力省略しました
 
-print(2.2+2.2)
-
-
-
+A = True
+B = False
+print(A^B)
+print(A&B)
