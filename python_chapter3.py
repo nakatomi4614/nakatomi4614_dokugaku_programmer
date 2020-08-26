@@ -1,5 +1,6 @@
 #　一行目のコメントは入力省略しました
 
-print(10 / 0)
+y = 2
+    x =1
 
-#ゼロでの割り算エラー
+    #IndentationError: unexpected indent
