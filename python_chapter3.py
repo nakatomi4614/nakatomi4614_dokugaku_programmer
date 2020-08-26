@@ -1,5 +1,5 @@
 #　一行目のコメントは入力省略しました
 
-my_string = "Hello, World!
+print(10 / 0)
 
-#SyntaxError: EOL while scanning string literal
+#ゼロでの割り算エラー
