@@ -1,6 +1,8 @@
 #　一行目のコメントは入力省略しました
 
-for (i = 0; i < 100; i++){
-     console.log("Hello, World!");
-}
+"Hello, World!"
+
+'Hello, World!'
+
+#" ' は同じ意味だけど、前後はそろえること！文字列を与える
 
