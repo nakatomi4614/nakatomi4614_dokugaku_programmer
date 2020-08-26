@@ -1,81 +1,35 @@
-#条件文
+# チャレンジ
+#1
+A,B,C = 1,"さる",2.2
+print(A)
+print(B)
+print(C)
 
-"""
-もし　おなかすいている　なら:
-    ご飯を食べる
-そうでなければ:
-    ご飯は食べない
-"""
-
-home = "アメリカ"
-if home == "アメリカ":
-    print("Hello, America!")
+#2
+if A<10:
+    print("10未満だよ")
 else:
-    print("Hello, World!")
+    print("10以上だよ")
 
-home = "日本"
-if home == "アメリカ":
-    print("Hello, America!")
+#3
+A = 30
+if A<=10:
+    print("10以下だよ")
+elif 10< A <=25 :
+    print("11以上25以下だよ")
 else:
-    print("Hello, World!")
+    print("26以上だよ")
 
-x = 2
-if x == 2:
-    print("数値は２です")
-if x % 2 == 0:
-    print("偶数です")
-if x % 2 != 0:
-    print("奇数です！")
-
-x = 10
-y = 11
-if x == 10:
-    if y == 11:
-        print(x+y)
-
-home = "タイ"
-if home == "日本":
-    print("Hello, Japan!")
-elif home == "タイ":
-    print("Hello, Thailand!")
-elif home == "インド":
-    print("hello, India!")
-elif home == "中国":
-    print("hello, China!")
+#4
+print(10 % 3)
+#5
+print(10// 3)
+#6
+age = 32
+if age< 35:
+    print("アラサーかな？")
+elif 35<= age <45:
+    print("アラフォーだよ")
 else:
-    print("Hello, World!")
+    print("わからないよ")
 
-home = "タイ"
-if home == "日本":
-    print("Hello, Japan!")
-elif home == "南極":
-    print("Hello, Thailand!")
-elif home == "インド":
-    print("hello, India!")
-elif home == "中国":
-    print("hello, China!")
-else:
-    print("Hello, World!")
-
-x = 100
-if x == 10:
-    print("10")
-elif x == 20:
-    print("20")
-else:
-    print("わからないです")
-if x == 100:
-    print("100")
-
-if x % 2== 0:
-    print("偶数")
-else:
-    print("奇数")
-
-# if は複合文
-print("これは単純文")
-
-
-
-
-print("五行開けて書いたprint文")
