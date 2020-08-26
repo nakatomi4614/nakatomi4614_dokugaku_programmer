@@ -1,4 +1,5 @@
 #　一行目のコメントは入力省略しました
 
-print("Hello, World!")
-#文字列はクォート記号で囲まれる
+my_string = "Hello, World!
+
+#SyntaxError: EOL while scanning string literal
