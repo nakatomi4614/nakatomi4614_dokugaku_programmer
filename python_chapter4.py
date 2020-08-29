@@ -1,35 +1,13 @@
-#関数定義 def
+#組み込み関数
+#len 文字数を数える
+print(len("なかとみはるき"))
 
-def f(x):
-    return  x * 2
+#str 文字列を与える
+print(str(100))
 
-result = f(2) # f(x) に　2を代入した結果
-print(result)
+#int 整数値
+print(int("3"))
 
+#float 浮動小数点
+print(float(200))
 
-def ｇ(x):
-    return x + 1
-z = g(4)
-
-if z == 5:
-    print("z is 5")
-else:
-    print("z is not 5")
-
-#変数の無いもの
-def f_1():
-    return 1+1
-result = f_1()
-print(result)
-
-#変数を複数とる関数
-def f_2(x, y, z):
-    return x + y + z
-result = f_2(1,2,3)
-print(result)
-
-#returnがない場合はnone
-def f_3():
-    z = 1+1
-result =f_3()
-print(result)
