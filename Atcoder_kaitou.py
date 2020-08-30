@@ -1,12 +1,9 @@
-#数値を空白区切りで入力する
-S_list = list(map(int, input("入力:").split()))
+#https://atcoder.jp/contests/abc162/tasks/abc162_b
+#S_list = list(map(int, input("入力:").split()))
+S = int(input("n?:"))
+for i in range(S):
+    if i % 3 != 0 and i % 5!= 0 and i % 15 != 0:
 
-S_max = max(S_list)
-answer = (sum(S_list)) / S_max
-if answer == 2:
-    result = "Yes"
-else:
-    result = "No"
-print(result)
+#print(result)
 
 
