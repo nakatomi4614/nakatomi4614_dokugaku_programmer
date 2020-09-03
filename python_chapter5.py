@@ -46,7 +46,28 @@ item = colors.pop()
 print(item)
 print(colors)
 
+#listの連結　+
+colors1 = ["blue", "green", "yellow"]
+colors2 = ["orange", "pink", "black"]
+print(colors1+colors2)
 
+#含まれているか調べる　調べたいもの　in　ソースリスト
+print("green" in colors) #boolを返す
+
+#含まれていないことを調べる　not in
+print("black" not in colors)
+
+#要素数　len
+print(len(colors))
+
+#sample
+colors = ["purple", "orange", "green"]
+guess = input("何色かな？：")
+
+if guess in colors:
+    print("大当たり！")
+else:
+    print("ハズレやでぇ")
 
 
 
