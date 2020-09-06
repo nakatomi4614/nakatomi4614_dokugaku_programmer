@@ -1,4 +1,4 @@
-#いろいろなループ　for while break continue
+# いろいろなループ　for while break continue
 
 """
 name = "Ted"
@@ -121,3 +121,20 @@ for i in range(1, 3):
     # 3は入らない1,2のみ
     # iを1つやった後letterの全ループして、i=2でおわり
 """
+# 二つのlistから
+list1 = [1, 2, 3, 4]
+list2 = [5, 6, 7, 8]
+added = []
+for i in list1:
+    for j in list2:
+        added.append(i + j)
+print(added)
+# 1+5,1+6って感じ
+
+#whileの入れ子にfor
+while input("y or n?") != "n":
+    for i in range(1,6):
+        print(i)
+    #nを押したら終了(nじゃなかったら下のforを実行）
+
+
