@@ -1,4 +1,4 @@
-#ループ
+#forループ
 
 """
 name = "Ted"
@@ -56,6 +56,44 @@ for show in coms:
 print(all_shows)
 
 #range
+for i in range(1, 11):
+    print(i)
 
+#whileループ
+x = 10
+while x > 0:
+    #正の数までループ
+    print("{}".format(x)) #{}内に.format()メソッドでひとつづつ表示する
+    x -= 1
+    #1づつ減らす
+print("Happy New Year!")
 
+#whileの無限ループ
+while True:
+    print("Hello, World!")
+    #breakしないと止まらない
+    break
+
+for i in range(0, 100):
+    #0から100回表示するので、99まで表示される
+    print(i)
+
+for i in range(0, 100):
+    print(i)
+    break
+    #breakで一回で終わり　　breakまで来たらすぐに終了する
+
+#whileとbreakの組み合わせ
+qs = ["What is your name?",
+      "What is your fav. color?",
+      "What is your quest?"]
+n = 0
+#nはインデック値
+while True:
+    print("Type q to quit")
+    a = input(qs[n])
+    if a == "q":
+        break
+    n = (n + 1) % 3
+    # nは0,1,2の繰り返しになる
 
