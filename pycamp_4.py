@@ -53,3 +53,54 @@ def bad_implementation():
 
 print(bad_implementation())
 
+#dict　要素にindexを持っていない　keyとvalueを持つ
+user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+print(user_info)
+print(user_info["user_name"])
+#追加は辞書[key]="value"
+user_info["first_name"] = "Taro"
+print(user_info)
+#in演算子 含まれるかどうか
+print("user_name" in user_info)
+print("bio" in user_info)
+#.get()でvalueを獲得する。ない場合はNone
+print(user_info.get('user_name'))
+bio = user_info.get('bio')
+print(bio)
+bio = user_info.get('bio' ,'') #二番目はデフォルト値
+print(bio)
+
+#for
+user_info = {'user_name': 'taro', 'last_name': 'Yamada'}
+for key in user_info:
+    print(key)
+    print(user_info[key])
+#keyを抜き出す
+
+#.keys()メソッド、.values()メソッド、.items()メソッド
+d = {'foo': 'spam', 'bar': 'ham'}
+print(d.items()) #key valueをtupleで
+d = {'foo': 'spam', 'bar': 'ham'}
+#keyとvalueを分けて受け取る
+for key, value in d.items():
+    print(key, value)
+#set 順序を持たない　追加はできる
+print({'spam', 'ham'})
+print({'spam', 'spam', 'spam'})
+#同じものは一つとみなす　一意の値しかとらない
+unique_users = {'dog', 'cat'}
+unique_users.add('snake')
+print(unique_users)
+print(len(unique_users))
+unique_users.add('snake')
+print(len(unique_users))
+
+#集合の積和 積and & 和or |
+allowed_permissions = {'edit', 'view'}
+requested_permissions = {'view', 'delete'}
+print(allowed_permissions & requested_permissions)
+
+editor = {'edit', 'comment'}
+reviewer = {'comment', 'approve'}
+print(editor | reviewer)
+
