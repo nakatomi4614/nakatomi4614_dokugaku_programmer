@@ -14,3 +14,23 @@ print("I'm Hiroki") #ダブルクオートで囲めばシングルクオート�
 bar
 baz
 """
+print("Mt."+"Fuji")
+print("spam" * 5) #文字の繰り返し
+
+print("python"[1])
+
+print("python"[2:5]) #スライス
+print("python"[:3])
+print("python"[4:])
+print(len("python"))
+
+print("t" in "python") #後ろの文字列に前の文字列が含まれるかどうか
+print("k" in "python")
+print("th" in "python")
+
+#文字列の分割　.split() 区切り文字で区切ってlistを作る
+print("pain-au-chocolat".split("-"))
+
+#.join()　結合
+print("-".join(["pain", "de", "campagne"]))
+
