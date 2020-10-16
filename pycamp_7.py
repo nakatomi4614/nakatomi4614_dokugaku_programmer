@@ -35,3 +35,29 @@ if __name__ == '__main__':
 
 r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 print(r.status_code)
+
+payload = {'key1': 'value1', 'key2': 'value2'} # POST するパラメーター
+r = requests.post('http://httpbin.org/post', data=payload)
+print(r.text)
+
+payload = {'key1': 'value1', 'key2': 'value2'}
+r = requests.get('http://httpbin.org/get', params=payload)
+print(r.url)
+# http://httpbin.org/get?key2=value2&key1=value1
+payload = {'key1': 'value1', 'key2': ['value2', 'value3']}
+r = requests.get('http://httpbin.org/get', params=payload)
+print(r.url)
+
+r = requests.get('https://www.python.org/blogs/')
+soup = BeautifulSoup(r.content, 'html.parser') # 取得したHTMLを解析
+print(soup.title) # titleタグの情報を取得
+print(soup.title.name)
+print(soup.title.string) # titleタグの文字列を取得
+print(soup.a)
+
+print(len(soup.find_all('a'))) # 全ての a タグを取得しt len() で件数を取得
+
+#h1とかの数を表示している
+print(len(soup.find_all('h1')))
+print(len(soup.find_all(['h1', 'h2', 'h3'])))
+print(len(soup.find_all('h3', {'class': 'event-title'})))
