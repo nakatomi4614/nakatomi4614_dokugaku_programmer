@@ -40,7 +40,7 @@ class Scraper:
         html = r.read()
         parser = "html.parser"
         sp = BeautifulSoup(html, parser)
-        for tag in sp.find_all("a"):
+        for tag in sp.find_all("link"):
             url = tag.get("href")
             if url is None:
                 continue
@@ -50,6 +50,11 @@ class Scraper:
 news = "https://news.google.com/topstories?hl=ja&gl=JP&ceid=JP:ja"
 Scraper(news).scrape()
 
-#上記実行してもhrefがtagにないような気がする　ソースに間違いはない
-#つーか　結構ない困ったねｗ
+# 上記実行してもa tagが無いことに気づく
+# このままだと表示されないのでdebugerでspの中身を調査する
+# <link>ってタグがlinkらしい
+# でねぇ…
+# これ参照先ソースが複雑すぎてこんな単純なスクレイピングは無理じゃねえの？ってなっている
+
+
 
