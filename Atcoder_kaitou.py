@@ -1,4 +1,4 @@
-# https://atcoder.jp/contests/abc124/tasks/abc124_b
+# https://atcoder.jp/contests/abc114/tasks/abc114_b
 n = int(input())
 S_list = list(map(int, input( ).split( )))
 i = 1
